@@ -23,7 +23,7 @@ A clean and responsive Register Form built with just HTML and CSS. This simple p
 ## File Structure
 
 ```
-simple-register-form/
+IBINA_Activity 1.4/
 ├── index.html
 ├── assets/
 │ ├── style.css
