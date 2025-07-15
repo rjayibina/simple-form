@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    --primary: #151515;
+    --white: #fff;
+    --black: #000;
+    --gray: #666;
+    --heading: 30px;
+    --label: 16px;
+    --btn-hover: #1570EF;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.form-container {
+    max-width: 650px;
+    width: 100%;
+    padding: 60px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container h2 {
+    color: var(--primary);
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: var(--heading);
+}
+
+.form-container label {
+    color: var(--primary);
+    font-size: var(--label);
+    margin-bottom: 12px;
+}
+
+.form-container input:not(:last-of-type) {
+    padding: 12px 16px;
+    border: 1px solid var(--gray);
+    border-radius: 12px;
+    margin-bottom: 32px;
+}
+
+.form-container form input[type="submit"] {
+    background-color: var(--primary);
+    padding: 14px 40px;
+    border: none;
+    border-radius: 12px;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.form-container form input[type="submit"]:hover {
+    background: var(--btn-hover);
+}
